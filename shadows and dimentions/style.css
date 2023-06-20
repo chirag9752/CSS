@@ -1,0 +1,28 @@
+/* h1{
+    text-shadow:3px 3px 3px red;
+    text-shadow:3px 3px 3px pink, 3px 3px 3px green;
+}
+
+.box{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    box-shadow: -13px -13px 13px greenyellow , 13px 13px 13px red;
+} */
+
+/* Dimentions */
+
+/* .div1
+{
+    max-height: 100px;
+    width: 100px;
+    border: 2px solid black ;
+    overflow: auto;
+} */
+
+
+.div2{
+     min-height: 100px;        /* it adjust according to max height     */
+    width: 300px;
+    border: 1px solid black;
+}

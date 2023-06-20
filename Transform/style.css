@@ -1,0 +1,30 @@
+/* .div1{
+    background-color: aqua;
+    transform: translate(100 , 49);
+    transform: rotate(-45deg); 
+    margin: 200px;
+    transform: scale(2,5);
+    transform: scaleX(2);
+    transform: scaleY(3);
+    transform: skew(45deg);
+    transform: skewX(45deg);
+}  */
+
+/* 3D -- Transform */
+
+div{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.scale{
+    margin: 3px;
+    transform: perspective(13px) translateZ(-10px);           /* for working in Z direction we have to do perspective onn */
+}
+
+.translated{
+    margin-left: 100px;
+    transform: perspective(365px) scaleZ(4) rotateX(45deg) rotateY(45deg);
+}

@@ -1,0 +1,35 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid orange;
+    background-color: aqua;
+    
+    /* transition: 2s; */
+    /* transition: all;  for using all type of transation at a same time */
+    /* transition-property: background-color;
+    transition-duration: 0.2s; */
+    
+    /* transition: background-color 1s ease 1s;  */
+    /* transition: all 5s ease 1s; */
+         /* if we didnt apply property i.e. transfrom or bg color than it bydefault set all */
+    /* transition: transform 3s cubic-bezier(0.71, -1.21, 0, 1.94) ;   here cubic buzzer we can get by inspect element and can generate by me */
+    transition: transform 1s ease 1s;
+
+}
+
+.box:hover{
+     /* background-color: brown;
+     transform: rotate(45deg); */
+     
+     background-color: brown;
+     transform: scale(2) translateX(500px) rotate(360deg);
+} 

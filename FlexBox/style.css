@@ -1,0 +1,65 @@
+.container{
+    border:2px solid green;
+    height: 300px;
+    display: flex;        /* by default row wise hota hai */
+    /*  flex-direction: column;   here column means row , row means column*/
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap;   /*  width ko intapt rakhta hai means screen size squeez karne me bhi width kam nhi hoti content  neeche shift ho jaaate hai */
+    /* flex-wrap: nowrap;     by default */
+    /* flex-wrap: wrap-reverse;    means shift jo hai vo uper side hogaa     */
+    /* flex-flow: column-reverse wrap;   combination of flex-direction and flex wrap */
+    
+    /* justify-content: flex-start;                 /* shift according to main axis i.e. X-axis*/
+  /* justify-content: flex-end;                    */
+    justify-content: center;
+   /* justify-content: space-around;        */       /* space equal ho jayegi beech m but left and right me equall nhi hogi*/
+   /* justify-content: space-between;       */        /* space equal ho jayegi beech m but left and right chipak jayenge conatainer se*/
+   /* justify-content: space-evenly;         */       /* space equal distribute ho jayegi */
+
+    
+    align-items: center;       /*              shift according to cross axis i.e. Y-axis i.e column wise
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;  */
+   /* align-items: stretch;   */  /* by default*/
+   /*  align-items: baseline; */   /* content k base ki line ko ek line me laa deta hai*/
+    /* gap: 10px;      
+    row-gap: 10px;
+    column-gap: 20px; */
+
+    /* flex-wrap: wrap;  */
+    align-content: flex-start;      /*  align-content manages the space between the lines when items wrap.align-items aligns the items relative to each other when sizes of items are different. When the size of the items are the same and there is only one line, they behave similarly.
+    /* align-content: flex-end;
+    align-content: baseline;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;  */
+
+    flex-direction: row;
+    /* flex-wrap: wrap; */ 
+
+}
+
+
+.box{
+    background-color: rgb(6, 221, 221);
+    border: 1px solid black;
+    /* width: 100px; */
+     /* flex-grow: 1;           size bada ho jaata hai   */
+     /* flex-shrink: 4;         isse squeez jldi hota hai   */
+      flex-basis: 100px;         /*  same as width but content bada hone me box bhi bada ho jaayega  */
+}
+#box1{
+    order: 1;
+    flex-shrink: 4;          /* isse individual grow hogaa */
+}    
+
+#box4{
+    order: 8;
+    /* align-self: stretch;       only for 1 items */
+}
+#box3{
+    order: 7;
+}

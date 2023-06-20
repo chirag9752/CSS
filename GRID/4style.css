@@ -1,0 +1,47 @@
+.container{
+    height: 700px;
+    width: 600px;
+    border: 1px solid black;
+    background-color: brown;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3 , 100px);
+    grid-template-rows: repeat(3 , 100px);
+/* 
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: baseline; */
+
+    /* align-items: start;
+    align-items: end;
+    align-items: baseline;
+    align-items: stretch;           this aliegn item property apply under particular box*/
+
+    /* align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;     rows k beech ke space se deal karta hai    */
+}
+
+.box{
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+#box1
+{
+
+    /* justify-self: start;
+    justify-self: end;
+    justify-self:center;                horizontally aliegn karta hai
+    justify-self: baseline; */
+    
+    /* align-self: center;
+    align-self: start;                  vertically aliegn karta hai */
+    align-self: end; 
+}

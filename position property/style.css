@@ -1,0 +1,35 @@
+.box{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#box1{
+    position: relative;
+    top: 30px;
+    left: 34px;
+}
+
+#box3{
+    position: fixed;
+    top: 30px;
+    left: 33px;
+}
+
+#box4{
+    position: absolute;
+    
+}
+
+#box2{
+     position: sticky;          /*  means parent/body se stick ho jaata hai       */
+    top: 0px; 
+}
+
+#wrapper{
+    height: 1000px;
+    width: 100%;
+    background-color: yellowgreen;
+}
